@@ -1,0 +1,6 @@
+# Package list for the image (read by the CI pipeline).
+# One token per line or several per line; '#' starts a comment; a leading '-'
+# removes a package from the target's default set.
+-luci -luci-ssl -luci-mod-admin-full -luci-theme-bootstrap
+-uhttpd -uhttpd-mod-ubus
+dropbear uci ubus netifd firewall4 dnsmasq odhcpd-ipv6only

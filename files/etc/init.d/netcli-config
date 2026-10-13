@@ -1,0 +1,9 @@
+#!/bin/sh /etc/rc.common
+# Restore the last explicitly saved NetCLI configuration before network startup.
+# shellcheck disable=SC2034
+START=18
+
+start() {
+    [ -x /etc/netcli/config.boot ] || return 0
+    /etc/netcli/config.boot || logger -t netcli "saved configuration restore failed"
+}

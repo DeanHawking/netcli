@@ -1,0 +1,4 @@
+#!/bin/sh
+# Enable the NetCLI saved-configuration restore hook on first boot.
+/etc/init.d/netcli-config enable
+exit 0

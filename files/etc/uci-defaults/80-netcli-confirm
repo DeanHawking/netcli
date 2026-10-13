@@ -1,0 +1,4 @@
+#!/bin/sh
+# Runs once on first boot (uci-defaults scripts are deleted after a clean exit).
+/etc/init.d/netcli-confirm enable
+exit 0
